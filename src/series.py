@@ -54,3 +54,4 @@ if __name__ == '__main__':
     print('lucas(5):', lucas(5))
     print('sum_series(n)', sum_series.__doc__)
     print('sum_series(10):', sum_series(10))
+    print('sum_series(8, 9, 10):', sum_series(8, 9, 10))
