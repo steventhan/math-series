@@ -9,4 +9,8 @@ def fibonacci(n):
     elif n == 1: return 1
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
-    
+
+
+def lucas(n):
+    '''returns the nth value of the lucas series'''
+    pass
