@@ -13,4 +13,6 @@ def fibonacci(n):
 
 def lucas(n):
     '''returns the nth value of the lucas series'''
-    pass
+    if n < 0: return False
+    elif n == 0: return 2
+    elif n == 1: return 1
