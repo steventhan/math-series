@@ -1,4 +1,4 @@
-# TODO: add utf-8
+# -*- coding: utf-8 -*-
 import pytest
 
 FIBONACCI_TABLE = [

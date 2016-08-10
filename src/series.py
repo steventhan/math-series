@@ -1,4 +1,4 @@
-# TODO add utf-8
+# -*- coding: utf-8 -*-
 '''This module defines functions that implement mathematical series'''
 
 
