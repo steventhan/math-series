@@ -39,6 +39,27 @@ def test_lucas(n, result):
     assert lucas(n) == result
 
 
-def test_sum_series_fibonacci():
+# Using test sum_series func for fibonacci series
+@pytest.mark.parametrize('n, result', FIBONACCI_TABLE)
+def test_sum_series_fibonacci(n, result):
     from series import sum_series
-    assert sum_series(2) == 0
+    assert sum_series(n) == result
+
+OTHER_SERIES_TABLE = [
+    (-1, 5, 7, False),
+    (0, 5, 7, 5),
+    (1, 5, 7, 7),
+    (2, 5, 7, 12),
+    (3, 5, 7, 19),
+    (4, 5, 7, 31),
+    (5, 5, 7, 50),
+    (6, 5, 7, 81),
+    (7, 5, 7, 131)
+]
+
+
+# Using test sum_series func for a random series
+@pytest.mark.parametrize('n, a, b, result', OTHER_SERIES_TABLE)
+def test_sum_series_other(n, a, b, result):
+    from series import sum_series
+    assert sum_series(n, a, b) == result
