@@ -13,6 +13,7 @@ FIBONACCI_TABLE = [
     (7, 13)
 ]
 
+
 @pytest.mark.parametrize('n, result', FIBONACCI_TABLE)
 def test_fibonacci(n, result):
     from series import fibonacci
@@ -25,14 +26,19 @@ LUCAS_TABLE = [
     (1, 1),
     (2, 3),
     (3, 4),
-    (5, 7),
-    (6, 11),
-    (7, 18),
-    (8, 29)
+    (4, 7),
+    (5, 11),
+    (6, 18),
+    (7, 29)
 ]
 
 
 @pytest.mark.parametrize('n, result', LUCAS_TABLE)
 def test_lucas(n, result):
     from series import lucas
-    assert lucas(6) == 18
+    assert lucas(n) == result
+
+
+def test_sum_series_fibonacci():
+    from series import sum_series
+    assert sum_series(2) == 0
