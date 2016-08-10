@@ -1,6 +1,5 @@
 # math-series
-Paired Assignment for Python 401d4 Tuesday August 9, 2016
-This module defines functions that implement mathematical series
+Paired Assignment for Python 401d4 Tuesday August 9, 2016. This module defines functions that implement mathematical series
 
 # Instructions
 Clone this repo, start create new virtual env, install required plugins using:
