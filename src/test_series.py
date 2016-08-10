@@ -18,3 +18,7 @@ def test_fibonacci(n, result):
     from series import fibonacci
     assert fibonacci(n) == result
 
+
+def test_lucas():
+    from series import lucas
+    assert lucas(0) == 2
