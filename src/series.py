@@ -29,7 +29,7 @@ def lucas(n):
 def sum_series(n, a=0, b=1):
     '''
     returns nth value of fibonacci series if only n is passed and returns other
-    series if  a and b is passed
+    series if n, a and b is passed
     '''
     if n < 0:
         return False
@@ -39,3 +39,12 @@ def sum_series(n, a=0, b=1):
         return b
     else:
         return sum_series(n - 1, a, b) + sum_series(n - 2, a, b)
+
+if __name__ == '__main__':
+    print(__doc__)
+    print('fibonacci(n)', fibonacci.__doc__)
+    print('fibonacci(7):', fibonacci(7))
+    print('lucas(n)', lucas.__doc__)
+    print('lucas(5):', lucas(5))
+    print('sum_series(n)', sum_series.__doc__)
+    print('sum_series(10):', sum_series(10))
