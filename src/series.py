@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
-'''This module defines functions that implement mathematical series'''
+'''
+This module defines functions that implement mathematical series
+'''
 
 
 def fibonacci(n):
-    '''returns the nth value of the fibonacci series'''
+    '''
+    returns the nth value of the fibonacci series
+    '''
     if n < 0:
         return False
     elif n == 0:
@@ -15,7 +19,9 @@ def fibonacci(n):
 
 
 def lucas(n):
-    '''returns the nth value of the lucas series'''
+    '''
+    returns the nth value of the lucas series
+    '''
     if n < 0:
         return False
     elif n == 0:
