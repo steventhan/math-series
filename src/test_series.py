@@ -45,6 +45,7 @@ def test_sum_series_fibonacci(n, result):
     from series import sum_series
     assert sum_series(n) == result
 
+# A random series we made up
 OTHER_SERIES_TABLE = [
     (-1, 5, 7, False),
     (0, 5, 7, 5),
